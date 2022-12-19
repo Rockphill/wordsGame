@@ -14,7 +14,7 @@ struct TitleText: View {
     var body: some View {
         Text(text)
             .padding()
-            .font(.custom("Mark Pro Bold", size: 42))
+            .font(.custom("AvenirNext-Bold", size: 42))
             .frame(maxWidth: .infinity)
             .background(Color("FirstPlayer"))
             .foregroundColor(.white)

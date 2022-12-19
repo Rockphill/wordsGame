@@ -15,9 +15,12 @@
 		651481032947118900A5DA8A /* Mark Pro Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 651481022947118900A5DA8A /* Mark Pro Heavy.ttf */; };
 		651481052947119400A5DA8A /* Mark Pro Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 651481042947119400A5DA8A /* Mark Pro Bold.ttf */; };
 		65148107294711A500A5DA8A /* Mark Pro Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65148106294711A500A5DA8A /* Mark Pro Medium.ttf */; };
+		65D93BF2294859EB003384C0 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D93BF1294859EB003384C0 /* GameView.swift */; };
+		65D93BF429489B76003384C0 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D93BF329489B76003384C0 /* Player.swift */; };
+		65D93BF729489D92003384C0 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D93BF629489D92003384C0 /* GameViewModel.swift */; };
+		65D93BFA29506E2E003384C0 /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D93BF929506E2E003384C0 /* WordCell.swift */; };
 		65E99AF629473F8200800903 /* TitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E99AF529473F8200800903 /* TitleText.swift */; };
 		65E99AF82947423400800903 /* WordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E99AF72947423400800903 /* WordTextField.swift */; };
-		65E99AFA29474DE000800903 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E99AF929474DE000800903 /* GameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,9 +33,12 @@
 		651481022947118900A5DA8A /* Mark Pro Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mark Pro Heavy.ttf"; sourceTree = "<group>"; };
 		651481042947119400A5DA8A /* Mark Pro Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mark Pro Bold.ttf"; sourceTree = "<group>"; };
 		65148106294711A500A5DA8A /* Mark Pro Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mark Pro Medium.ttf"; sourceTree = "<group>"; };
+		65D93BF1294859EB003384C0 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		65D93BF329489B76003384C0 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		65D93BF629489D92003384C0 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		65D93BF929506E2E003384C0 /* WordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
 		65E99AF529473F8200800903 /* TitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleText.swift; sourceTree = "<group>"; };
 		65E99AF72947423400800903 /* WordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTextField.swift; sourceTree = "<group>"; };
-		65E99AF929474DE000800903 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,11 +71,12 @@
 		651480F02946F81700A5DA8A /* wordsGame */ = {
 			isa = PBXGroup;
 			children = (
-				65E99AF429473F5900800903 /* components */,
-				651480FF2947112F00A5DA8A /* project_fonts */,
-				651480F12946F81700A5DA8A /* wordsGameApp.swift */,
-				65E99AFB29474E0C00800903 /* Views */,
 				651480F52946F81800A5DA8A /* Assets.xcassets */,
+				651480F12946F81700A5DA8A /* wordsGameApp.swift */,
+				65D93BF529489D4C003384C0 /* Model */,
+				65E99AFB29474E0C00800903 /* Views */,
+				65D93BF82948AC6B003384C0 /* View Model */,
+				651480FF2947112F00A5DA8A /* project_fonts */,
 				651480F72946F81800A5DA8A /* Preview Content */,
 			);
 			path = wordsGame;
@@ -94,11 +101,28 @@
 			path = project_fonts;
 			sourceTree = "<group>";
 		};
+		65D93BF529489D4C003384C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				65D93BF329489B76003384C0 /* Player.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		65D93BF82948AC6B003384C0 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				65D93BF629489D92003384C0 /* GameViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
 		65E99AF429473F5900800903 /* components */ = {
 			isa = PBXGroup;
 			children = (
 				65E99AF529473F8200800903 /* TitleText.swift */,
 				65E99AF72947423400800903 /* WordTextField.swift */,
+				65D93BF929506E2E003384C0 /* WordCell.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -106,8 +130,9 @@
 		65E99AFB29474E0C00800903 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				65E99AF429473F5900800903 /* components */,
 				651480F32946F81700A5DA8A /* StartView.swift */,
-				65E99AF929474DE000800903 /* GameView.swift */,
+				65D93BF1294859EB003384C0 /* GameView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,7 +215,10 @@
 				65E99AF629473F8200800903 /* TitleText.swift in Sources */,
 				651480F22946F81700A5DA8A /* wordsGameApp.swift in Sources */,
 				65E99AF82947423400800903 /* WordTextField.swift in Sources */,
-				65E99AFA29474DE000800903 /* GameView.swift in Sources */,
+				65D93BF429489B76003384C0 /* Player.swift in Sources */,
+				65D93BFA29506E2E003384C0 /* WordCell.swift in Sources */,
+				65D93BF2294859EB003384C0 /* GameView.swift in Sources */,
+				65D93BF729489D92003384C0 /* GameViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
